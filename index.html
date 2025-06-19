@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema ISO Cumplimiento</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    h1 { color: #333; }
+    .seccion { margin-bottom: 20px; }
+    label { display: block; margin-top: 10px; }
+    button { margin-top: 20px; padding: 10px 20px; background: #0066cc; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Validación de Cumplimiento Normativo</h1>
+
+  <form id="formularioCumplimiento">
+    <!-- Preguntas ISO 25000 -->
+    <div class="seccion">
+      <h2>ISO/IEC 25000 - Calidad del Software</h2>
+      <label><input type="radio" name="p1" value="Sí"> ¿Se definen métricas de calidad?</label>
+      <label><input type="radio" name="p2" value="Sí"> ¿Se realizan pruebas funcionales?</label>
+      <label><input type="radio" name="p3" value="Sí"> ¿Se documenta la arquitectura del software?</label>
+    </div>
+
+    <!-- Preguntas ISO 27002 -->
+    <div class="seccion">
+      <h2>ISO/IEC 27002 - Seguridad de la Información</h2>
+      <label><input type="radio" name="p4" value="Sí"> ¿Están definidos roles de seguridad?</label>
+      <label><input type="radio" name="p5" value="Sí"> ¿Se monitorea acceso a activos sensibles?</label>
+      <label><input type="radio" name="p6" value="Sí"> ¿Se tienen controles de acceso físico?</label>
+    </div>
+
+    <!-- Preguntas ISO 9001 -->
+    <div class="seccion">
+      <h2>ISO 9001 - Sistema de Gestión de Calidad</h2>
+      <label><input type="radio" name="p7" value="Sí"> ¿Se define una política de calidad?</label>
+      <label><input type="radio" name="p8" value="Sí"> ¿Se evalúa la satisfacción del cliente?</label>
+      <label><input type="radio" name="p9" value="Sí"> ¿Se establecen objetivos medibles?</label>
+    </div>
+
+    <button type="submit">Enviar Evaluación</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
